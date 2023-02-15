@@ -1,0 +1,139 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 0;
+
+  &-menu {
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        a {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var(--font-r);
+          color: $c100;
+          @extend %dtrans;
+
+          &:hover {
+
+            color: $c200;
+            @extend %htrans;
+
+          }
+        }
+      }
+
+      li + li {
+        margin-left: 35px;
+      }
+    }
+  }
+
+  &-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__btn {
+      border: none;
+      background: transparent;
+
+      a {
+
+        position: relative;
+      }
+
+      a:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background-image: url('/img/svg/arrow-drop.svg');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center;
+        width: 10px;
+        height: 10px;
+        top: 30%;
+        right: -30%;
+        @extend %dtrans;
+      }
+    }
+
+    &__btn.active {
+      a:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center;
+        width: 10px;
+        height: 10px;
+        top: 30%;
+        right: -30%;
+        transform: rotate(180deg);
+        @extend %htrans;
+      }
+    }
+
+    &__cont {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      border-radius: 5px;
+      background: $default;
+      width: 100px;
+      text-align: center;
+      padding: 15px;
+      right: -30%;
+      @extend %dtrans;
+      @extend %border-ef;
+
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        @extend %dtrans;
+
+        &:hover {
+          color: $c200;
+          @extend %htrans;
+        }
+      }
+
+      a + a {
+        margin-top: 5px;
+      }
+    }
+  }
+  &-btn{
+
+    background: transparent;
+    @extend %send-btn;
+  }
+}
+
+
+.active {
+  display: flex;
+  @extend %htrans;
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}

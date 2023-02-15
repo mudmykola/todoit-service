@@ -3,5 +3,6 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
-// подключения компонентов страницы
+// connect page components
 @import "./components/header";
+@import "./components/navigation";

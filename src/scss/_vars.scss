@@ -1,44 +1,59 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
 :root {
-    // base
-    --font-family: "Open Sans", sans-serif;
-    --content-width: 1170px;
-    --container-offset: 15px;
-    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-    // colors
-    --light-color: #fff;
+  // base
+  --font-family: 'Ubuntu', sans-serif;
+  --content-width: 1238px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // colors
+  --light-color: #fff;
+  //fonts
+  --font-r: 400;
+  --font-b: 700;
+  //transition
+  --h-tr: all 0.5s ease;
+  --d-tr: all 0.3s ease;
 }
 
-// fonts
-%font-r {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-}
-
-%font-m {
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-}
-
-%font-b {
-    font-family: 'Jost', sans-serif;
-    font-weight: 700;
-}
-
-%font-eb {
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-}
 
 //color
-$c100:#725EF3;
-$c200:#000;
-$c300:#2B2F33;
-$c400:#3B5998;
-$c500:#55ACEE;
-$c600:#595959;
-$c700:#7F4DA0;
-$c800:#FA141B;
-$c900:#C8DAEA;
-$default:#fff;
+$c100: #141414;
+$c200: #0597F2;
+$c300: #E7F5FF;
+$default: #fff;
+
+//effect
+%border-ef {
+  box-shadow: 0px 19px 35px rgba(163, 165, 171, 0.9);
+}
+
+%header-ef {
+  background: linear-gradient(
+                  180deg,
+                  rgba(0, 80, 157, 0.08) 0%,
+                  rgba(0, 80, 157, 0) 100%
+  );
+}
+
+// transition
+%dtrans {
+  transition: var(--d-tr);
+}
+
+%htrans {
+  transition: var(--h-tr);
+}
+
+//btn
+%send-btn{
+  border: 1px solid $c100;
+  padding: 17px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  a{
+    font-weight: var(--font-b);
+
+  }
+
+}
