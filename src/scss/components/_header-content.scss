@@ -49,16 +49,112 @@ button{
 
 // 768
 @media (max-width: 768px) {
+  .header-content{
+    padding-top: 50px;
+    strong{
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    h2{
+      width: 100%;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    span{
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .header-content{
+    padding-top: 50px;
+    strong{
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    h2{
+      width: 100%;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    span{
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .header-content{
+    padding-top: 50px;
+    strong{
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    h2{
+      width: 100%;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    span{
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .header-content{
+    padding-top: 50px;
+    strong{
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    h2{
+      width: 100%;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    span{
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
