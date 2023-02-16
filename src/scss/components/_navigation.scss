@@ -39,13 +39,10 @@
     &__btn {
       border: none;
       background: transparent;
+      position: relative;
+      cursor: pointer;
 
-      a {
-
-        position: relative;
-      }
-
-      a:after {
+      p:after {
         content: '';
         position: absolute;
         display: inline-block;
@@ -63,7 +60,9 @@
     }
 
     &__btn.active {
-      a:after {
+      color: $c200;
+
+      p:after {
         content: '';
         position: absolute;
         display: inline-block;
@@ -109,15 +108,99 @@
       }
     }
   }
-  &-btn{
 
+  &-btn {
     background: transparent;
     @extend %send-btn;
+    @extend %dtrans;
+
+    &:hover {
+      border-color: $c200;
+      @extend %htrans;
+      color: $c200;
+    }
+  }
+
+  &-lang {
+    &__dropdown {
+      position: relative;
+
+      &--btn {
+        border: none;
+        background: transparent;
+        position: relative;
+        font-weight: var(--font-r);
+        cursor: pointer;
+        p:after{
+          content: '';
+          position: absolute;
+          display: inline-block;
+          background-image: url('/img/svg/arrow-drop.svg');
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+          background-position: center ;
+          width: 10px;
+          height: 10px;
+          top: 30%;
+          right: -30%;
+          @extend %dtrans;
+        }
+
+      }
+      &--btn.show {
+        color: $c200;
+        p:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+          background-position: center;
+          width: 10px;
+          height: 10px;
+          top: 30%;
+          right: -30%;
+          transform: rotate(180deg);
+          @extend %htrans;
+        }
+      }
+
+      &--cont {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        border-radius: 3px;
+        background: $default;
+        width: 50px;
+        text-align: center;
+        padding: 15px;
+        right: -50%;
+        @extend %dtrans;
+        @extend %border-ef;
+        a{
+          color: $c100;
+          @extend  %dtrans;
+          &:hover{
+            color: $c200;
+            @extend  %htrans;
+          }
+        }
+        a+a{
+          margin-top: 5px;
+
+        }
+      }
+    }
   }
 }
 
-
 .active {
+  display: flex;
+  @extend %htrans;
+}
+.show{
   display: flex;
   @extend %htrans;
 }
