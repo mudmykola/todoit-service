@@ -1,0 +1,64 @@
+.header-content {
+  padding-top: 129px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  strong {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: var(--font-b);
+    margin-bottom: 25px;
+    color: $c200;
+  }
+
+  h2 {
+    width: 782px;
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: var(--font-b);
+    margin-bottom: 20px;
+    p {
+      color: $c200;
+      display: inline-block;
+    }
+  }
+  span {
+    width: 470px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+button{
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 251px;
+  height: 60px;
+  background: $c100;
+  border-radius: 6px;
+  font-weight: var(--font-b);
+  color: $default;
+  @extend %dtrans;
+  &:hover{
+    background: $c200;
+    @extend %htrans;
+  }
+}
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
