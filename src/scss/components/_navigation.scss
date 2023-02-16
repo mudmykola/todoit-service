@@ -219,4 +219,10 @@
 
 // 320
 @media (max-width: 320px) {
+  .navigation{
+    &-menu,&-btn,&-lang{
+      display: none;
+    }
+
+  }
 }
