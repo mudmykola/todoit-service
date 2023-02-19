@@ -2,7 +2,7 @@
 // colors
 :root {
   // base
-  --font-family: 'Ubuntu', sans-serif;
+  --font-family: "Ubuntu", sans-serif;
   --content-width: 1238px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -16,23 +16,22 @@
   --d-tr: all 0.3s ease;
 }
 
-
 //color
 $c100: #141414;
-$c200: #0597F2;
-$c300: #E7F5FF;
+$c200: #0597f2;
+$c300: #e7f5ff;
 $default: #fff;
 
 //effect
 %border-ef {
-  box-shadow: 0px 19px 35px rgba(163, 165, 171, 0.9);
+  box-shadow: 0px 5px 35px rgba(225, 242, 255, 0.9);
 }
 
 %header-ef {
   background: linear-gradient(
-                  180deg,
-                  rgba(0, 80, 157, 0.08) 0%,
-                  rgba(0, 80, 157, 0) 100%
+    180deg,
+    rgba(0, 80, 157, 0.08) 0%,
+    rgba(0, 80, 157, 0) 100%
   );
 }
 
@@ -46,14 +45,12 @@ $default: #fff;
 }
 
 //btn
-%send-btn{
+%send-btn {
   border: 1px solid $c100;
   padding: 17px 30px;
   border-radius: 6px;
   cursor: pointer;
-  a{
+  a {
     font-weight: var(--font-b);
-
   }
-
 }

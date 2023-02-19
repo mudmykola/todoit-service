@@ -1,0 +1,103 @@
+.service {
+  padding-top: 80px;
+  background-image: url("/img/service-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  &-inner {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 25px;
+      color: $default;
+      font-weight: var(--font-b);
+    }
+  }
+  &-list {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      li {
+        cursor: pointer;
+        width: 610px;
+        background: $default;
+        border-radius: 20px;
+        @extend %dtrans;
+        &:hover {
+          @extend %htrans;
+
+          @extend %border-ef;
+        }
+      }
+    }
+    &__box {
+      padding: 40px;
+      p {
+        margin: 20px 0;
+      }
+      a {
+        font-weight: var(--font-b);
+        color: $c200;
+      }
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: var(--font-b);
+        color: $c100;
+        margin: 0;
+      }
+    }
+  }
+  &-send {
+    padding: 80px 0;
+    width: 618px;
+    text-align: center;
+    margin: 0 auto;
+    h2 {
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: var(--font-b);
+      margin-bottom: 40px;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      p {
+        width: 250px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $default;
+        text-align: left;
+      }
+      button {
+        width: 199px;
+        height: 60px;
+        border: transparent;
+        @extend %send-btn;
+        @extend %dtrans;
+        &:hover {
+          background: $c300;
+          @extend %htrans;
+          color: $c200;
+          @extend %border-ef;
+        }
+      }
+    }
+  }
+}

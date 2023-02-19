@@ -1,14 +1,17 @@
 .header {
+  position: relative;
   background-image: url("/img/header-bg.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 // 768
 @media (max-width: 768px) {
-  .header{
+  .header {
     height: 20vh;
     background-size: cover;
   }
@@ -16,7 +19,7 @@
 
 // 600
 @media (max-width: 600px) {
-  .header{
+  .header {
     height: 20vh;
     background-size: cover;
   }
@@ -24,7 +27,7 @@
 
 // 480
 @media (max-width: 480px) {
-  .header{
+  .header {
     height: 20vh;
     background-size: cover;
   }
@@ -33,7 +36,7 @@
 
 // 320
 @media (max-width: 320px) {
-  .header{
+  .header {
     height: 20vh;
     background-size: cover;
   }

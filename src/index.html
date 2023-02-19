@@ -2,15 +2,18 @@
 <html lang="en" class="page">
 @include('partials/head.html')
 <body class="page__body">
-    <div class="site-container">
-        @include('partials/header.html')
-        <main class="main">
-            <!-- Building the structure in sections -->
-            <section>
-                @include('partials/tools.html')
-            </section>
-        </main>
-        @include('partials/footer.html')
-    </div>
+<div class="site-container">
+	@include('partials/header.html')
+	<main class="main">
+		<!-- Building the structure in sections -->
+		<section>
+			@include('partials/tools.html')
+		</section>
+		<section>
+			@include('partials/service.html')
+		</section>
+	</main>
+	@include('partials/footer.html')
+</div>
 </body>
 </html>
