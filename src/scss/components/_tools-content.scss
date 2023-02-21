@@ -69,6 +69,7 @@
         li {
           cursor: pointer;
           position: relative;
+
           &::after {
             position: absolute;
             content: "";
@@ -78,10 +79,12 @@
             border-bottom: 1px solid $c200;
             @extend %dtrans;
           }
+
           &:hover::after {
             width: 250px;
             @extend %htrans;
           }
+
           img {
             margin-bottom: 15px;
           }
@@ -102,16 +105,20 @@
         text-transform: uppercase;
       }
     }
+
     &__inner {
       margin-left: 139px;
+
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
         -webkit-align-items: end;
+
         li {
           cursor: pointer;
           position: relative;
+
           &::after {
             position: absolute;
             content: "";
@@ -121,13 +128,92 @@
             border-bottom: 1px solid $c200;
             @extend %dtrans;
           }
+
           &:hover::after {
             width: 50%;
             @extend %htrans;
           }
+
           img {
             margin-bottom: 15px;
           }
+        }
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+  .toolscont {
+    &-box {
+      top: 16%;
+      height: 1140px;
+    }
+    &-text {
+      flex-direction: column;
+      width: 320px;
+      text-align: center;
+      margin: 0 auto;
+
+      &__title {
+        padding: 0 10px;
+        width: 320px;
+        font-size: 23px;
+        line-height: 28px;
+        font-weight: var(--font-b);
+      }
+      &__desc {
+        width: 320px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .toolslist {
+    width: 320px;
+    overflow-x: scroll;
+    max-height: 700px;
+    &-optimization {
+      flex-direction: column;
+      &__title {
+        padding-bottom: 20px;
+        margin: 0 15px;
+      }
+      &__inner {
+        margin-left: 0;
+        width: 280px;
+        margin: 0 auto;
+        ul {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+    &-offer {
+      flex-direction: column;
+      &__title {
+        margin: 0 15px;
+        padding-bottom: 20px;
+      }
+      &__inner {
+        width: 280px;
+        margin: 0 auto;
+
+        ul {
+          grid-template-columns: repeat(1, 1fr);
         }
       }
     }
