@@ -3,7 +3,7 @@
 
 // Определение операционной системы на мобильных
 import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+console.log(mobileCheck());
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -57,8 +57,10 @@ console.log(mobileCheck())
 // });
 
 // Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
+import AOS from "aos";
+AOS.init({
+  duration: 1000,
+});
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
