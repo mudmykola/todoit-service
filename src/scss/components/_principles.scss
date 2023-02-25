@@ -1,0 +1,54 @@
+.principles {
+  margin-top: 60px;
+
+  &-inner {
+    padding-top: 40px;
+    display: flex;
+
+    &__title {
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: var(--font-b);
+        text-transform: uppercase;
+      }
+    }
+
+    &__list {
+      margin-left: 136px;
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 95px;
+
+        li {
+          width: 240px;
+
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: var(--font-r);
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}

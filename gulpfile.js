@@ -1,5 +1,7 @@
 const { src, dest, series, watch } = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
+const gulp = require("gulp");
+const postcss = require("gulp-postcss");
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const browserSync = require("browser-sync").create();
@@ -40,7 +42,7 @@ const paths = {
   srcFullJs: `${srcFolder}/js/**/*.js`,
   srcMainJs: `${srcFolder}/js/main.js`,
   buildJsFolder: `${buildFolder}/js`,
-  srcPartialsFolder: `${srcFolder}/partials/**/*`,
+  srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
 };
 
@@ -187,6 +189,14 @@ const scripts = () => {
     .pipe(dest(paths.buildJsFolder))
     .pipe(browserSync.stream());
 };
+
+// postcss
+gulp.task("css", () => {
+  return gulp
+    .src("./app/css/main.css")
+    .pipe(postcss([autoprefixer({ grid: true })]))
+    .pipe(gulp.dest("./app/css"));
+});
 
 // scripts backend
 const scriptsBackend = () => {
