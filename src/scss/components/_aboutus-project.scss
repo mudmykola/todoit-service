@@ -137,16 +137,244 @@
 
 // 768
 @media (max-width: 768px) {
+  .aboutus-pro {
+    &__list {
+      ul {
+        width: 740px;
+        margin: 0 auto;
+
+        li {
+          padding: 30px;
+        }
+      }
+    }
+
+    &__services {
+      &--crm, &--ai, &--microsoft {
+        padding: 30px 50px;
+      }
+
+      &--crm {
+        top: 70%;
+      }
+
+      &--ai {
+        bottom: 8%;
+      }
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .aboutus-pro {
+    height: 770px;
+
+    &__title {
+      width: 320px;
+
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    &__list {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+
+        li {
+          width: 230px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__services {
+      &--crm {
+        width: 350px;
+        bottom: -25%;
+        padding: 20px;
+        border-radius: 15px;
+        top: 114%;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--ai {
+        width: 380px;
+        bottom: -35%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--microsoft {
+        width: 400px;
+        bottom: -45%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .aboutus-pro {
+    height: 770px;
+
+    &__title {
+      width: 320px;
+
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    &__list {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+
+        li {
+          width: 230px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__services {
+      &--crm {
+        width: 350px;
+        bottom: -25%;
+        padding: 20px;
+        border-radius: 15px;
+        top: 114%;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--ai {
+        width: 380px;
+        bottom: -35%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--microsoft {
+        width: 400px;
+        bottom: -45%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .aboutus-pro {
+    &__title {
+      width: 320px;
+
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    &__list {
+      ul {
+        grid-template-columns: repeat(1, 1fr);
+
+        li {
+          width: 280px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__services {
+      &--crm {
+        width: 210px;
+        bottom: -28%;
+        padding: 20px;
+        border-radius: 15px;
+        top: 118%;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--ai {
+        width: 245px;
+        bottom: -37%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      &--microsoft {
+        width: 290px;
+        bottom: -45%;
+        padding: 20px;
+        border-radius: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
 }
