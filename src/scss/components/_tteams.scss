@@ -1,7 +1,97 @@
 .tteams {
   margin-top: 30px;
+  &-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: var(--font-b);
+  }
   &-box {
+    width: 912px;
     border: 1px solid $c400;
     border-radius: 20px;
   }
+  &-content {
+    padding: 40px 80px 40px 40px;
+    display: flex;
+    align-items: center;
+
+    &__title {
+      width: 459px;
+      display: flex;
+      align-items: center;
+      &--text {
+        margin-left: 20px;
+        h2 {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var(--font-b);
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var(--font-r);
+        }
+      }
+    }
+    &__desc {
+      p {
+        width: 306px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: var(--font-r);
+        margin-left: 40px;
+      }
+    }
+  }
+  &-tabs {
+    padding: 40px 112px 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    @extend %dtrans;
+  }
+  &-contents {
+    padding: 40px;
+
+    &__cont {
+      width: 845px;
+
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      @extend %dtrans;
+    }
+    &__text {
+      width: 393px;
+      h2 {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: var(--font-b);
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: var(--font-r);
+      }
+    }
+  }
+}
+
+.active {
+  background: $c100;
+  color: $default;
+  font-weight: var(--font-b);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %htrans;
+}
+
+.show {
+  display: flex;
+  @extend %htrans;
 }
