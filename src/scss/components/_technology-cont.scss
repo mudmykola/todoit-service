@@ -1,0 +1,77 @@
+.technology-cont {
+  &__inner {
+    display: flex;
+
+    &--title {
+      padding-right: 10%;
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: var(--font-b);
+
+        text-transform: uppercase;
+        width: 202px;
+      }
+    }
+  }
+  &__item {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid $c400;
+        border-radius: 20px;
+        @extend %dtrans;
+        &:hover {
+          @extend %border-ef;
+          @extend %htrans;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var(--font-b);
+        }
+      }
+    }
+    &--box {
+      padding: 28px;
+    }
+  }
+  &__list {
+    width: 925px;
+    display: flex;
+    align-items: center;
+  }
+  &__contact {
+    margin-left: 20px;
+
+    ul {
+      li {
+        cursor: pointer;
+        width: 295px;
+        border: 1px solid $c400;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        @extend %dtrans;
+        p {
+          margin-left: 15px;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var(--font-b);
+        }
+        &:hover {
+          @extend %border-ef;
+          @extend %htrans;
+        }
+      }
+      li + li {
+        margin-top: 7%;
+      }
+    }
+  }
+}

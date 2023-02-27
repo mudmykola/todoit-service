@@ -55,17 +55,17 @@
         }
       }
     }
-
   }
 
   &__services {
-
     margin-top: 51px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &--crm, &--ai, &--microsoft {
+    &--crm,
+    &--ai,
+    &--microsoft {
       display: flex;
       align-items: center;
       padding: 43px 60px;
@@ -78,7 +78,6 @@
       &:hover {
         @extend %htrans;
         @extend %border-ef;
-
       }
 
       p {
@@ -101,7 +100,6 @@
         @extend %htrans;
         @extend %border-ef;
       }
-
     }
 
     &--ai {
@@ -134,7 +132,6 @@
   }
 }
 
-
 // 768
 @media (max-width: 768px) {
   .aboutus-pro {
@@ -150,7 +147,9 @@
     }
 
     &__services {
-      &--crm, &--ai, &--microsoft {
+      &--crm,
+      &--ai,
+      &--microsoft {
         padding: 30px 50px;
       }
 
