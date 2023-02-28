@@ -42,7 +42,7 @@ const paths = {
   srcFullJs: `${srcFolder}/js/**/*.js`,
   srcMainJs: `${srcFolder}/js/main.js`,
   buildJsFolder: `${buildFolder}/js`,
-  srcPartialsFolder: `${srcFolder}/partials/**/*`,
+  srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
 };
 

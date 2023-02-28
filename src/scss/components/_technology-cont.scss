@@ -4,6 +4,7 @@
 
     &--title {
       padding-right: 10%;
+
       h2 {
         font-size: 20px;
         line-height: 25px;
@@ -14,20 +15,24 @@
       }
     }
   }
+
   &__item {
     ul {
       display: flex;
       gap: 20px;
+
       li {
         cursor: pointer;
         text-align: center;
         border: 1px solid $c400;
         border-radius: 20px;
         @extend %dtrans;
+
         &:hover {
           @extend %border-ef;
           @extend %htrans;
         }
+
         p {
           margin-top: 16px;
           font-size: 16px;
@@ -36,15 +41,18 @@
         }
       }
     }
+
     &--box {
       padding: 28px;
     }
   }
+
   &__list {
     width: 925px;
     display: flex;
     align-items: center;
   }
+
   &__contact {
     margin-left: 20px;
 
@@ -58,20 +66,39 @@
         display: flex;
         align-items: center;
         @extend %dtrans;
+
         p {
           margin-left: 15px;
           font-size: 16px;
           line-height: 20px;
           font-weight: var(--font-b);
         }
+
         &:hover {
           @extend %border-ef;
           @extend %htrans;
         }
       }
+
       li + li {
         margin-top: 7%;
       }
     }
   }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
 }
