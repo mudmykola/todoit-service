@@ -1,0 +1,95 @@
+.footer {
+  font-size: 16px;
+  line-height: 20px;
+
+  background: linear-gradient(to bottom, #74c7fa, #85ccf8);
+
+  &-box {
+    background: $default;
+    border-radius: 60px 60px 0 0;
+  }
+  a {
+    font-size: 16px;
+    line-height: 20px;
+    color: $c100;
+  }
+  &-inner {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__logo {
+      img {
+        margin-bottom: 46px;
+      }
+    }
+    &__social {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          @extend %dtrans;
+          &:hover {
+            opacity: 0.8;
+            @extend %htrans;
+          }
+        }
+        li + li {
+          margin-left: 15px;
+        }
+      }
+    }
+    &__text {
+      h2 {
+        margin-bottom: 20px;
+      }
+      ul {
+        margin-bottom: 58px;
+        li {
+          font-weight: var(--fon-r);
+
+          a {
+            @extend %dtrans;
+            &:hover {
+              color: $c200;
+              @extend %htrans;
+            }
+          }
+        }
+        li + li {
+          margin-top: 10px;
+        }
+      }
+      span {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: var(--fon-r);
+      }
+    }
+    &__menu {
+      ul {
+        margin-bottom: 189px;
+        display: flex;
+        li {
+          a {
+            @extend %dtrans;
+            &:hover {
+              color: $c200;
+              @extend %htrans;
+            }
+          }
+        }
+        li + li {
+          margin-left: 38px;
+        }
+      }
+      span {
+        width: 100%;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+      }
+    }
+  }
+}

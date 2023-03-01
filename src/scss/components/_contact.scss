@@ -1,0 +1,95 @@
+.contact {
+  background-image: url("/img/contact-bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 760px;
+  width: 100%;
+  color: $default;
+  a {
+    color: $default;
+  }
+  &-inner {
+    width: 509px;
+    margin: 0 auto;
+    padding-top: 157px;
+    &__title {
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: var(--font-b);
+    }
+    &__phone {
+      margin-top: 30px;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          img {
+            margin-right: 15px;
+          }
+          a {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: var(--font-r);
+          }
+          display: flex;
+          align-items: center;
+        }
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+    &__mail {
+      margin: 24px 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 15px;
+      }
+      a {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: var(--font-r);
+      }
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      background: $default;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: var(--font-b);
+      color: $c100;
+      padding: 22px 30px;
+      @extend %dtrans;
+      cursor: pointer;
+      &:hover {
+        @extend %border-ef;
+        color: $c200;
+        @extend %htrans;
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
