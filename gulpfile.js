@@ -190,14 +190,6 @@ const scripts = () => {
     .pipe(browserSync.stream());
 };
 
-// postcss
-gulp.task("css", () => {
-  return gulp
-    .src("./app/css/main.css")
-    .pipe(postcss([autoprefixer({ grid: true })]))
-    .pipe(gulp.dest("./app/css"));
-});
-
 // scripts backend
 const scriptsBackend = () => {
   return src(paths.srcMainJs)
@@ -308,7 +300,7 @@ const watchFiles = () => {
 
   watch(paths.srcScss, styles);
   watch(paths.srcFullJs, scripts);
-  watch(`${paths.srcPartialsFolder}/*.html`, htmlInclude);
+  watch(`${paths.srcPartialsFolder}/**`, htmlInclude);
   watch(`${srcFolder}/*.html`, htmlInclude);
   watch(`${paths.resourcesFolder}/**`, resources);
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
