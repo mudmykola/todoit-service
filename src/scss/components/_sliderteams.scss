@@ -1,4 +1,6 @@
 .sliderteams {
+  position: relative;
+
   &-inner {
     display: flex;
     justify-content: space-between;
@@ -55,6 +57,7 @@
     background: $default;
     width: 295px;
     cursor: pointer;
+
     &__box {
       margin: 0 auto;
       display: flex;
@@ -97,6 +100,7 @@
         height: 22px;
         background: transparent;
         cursor: pointer;
+
         span {
           color: $c200;
           font-weight: var(--font-b);
@@ -104,9 +108,126 @@
       }
     }
   }
+
   &-pagination {
     display: flex;
     justify-content: center;
     padding: 30px 0 80px;
+  }
+
+  &-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 100%;
+    height: 100%;
+
+    z-index: 9999;
+
+    &__inner {
+      border-radius: 20px;
+      position: absolute;
+      width: 620px;
+      background: $default;
+      bottom: 40%;
+      left: 30%;
+
+    }
+
+    &__box {
+
+      display: flex;
+      align-items: center;
+      padding: 20px 20px 40px 40px;
+    }
+
+    &__img {
+      margin-right: 60px;
+      width: 100%;
+      text-align: center;
+
+      img {
+
+      }
+    }
+
+    &__controls {
+      margin-top: 179px;
+
+    }
+
+    &__prev {
+      margin-right: 10px;
+    }
+
+    &__prev, &__next {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $c100;
+      background: transparent;
+      border-radius: 100%;
+    }
+
+    &__cont {
+      position: relative;
+
+      h2 {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: var(--font-b);
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: var(--font-r);
+        margin-bottom: 15px;
+        color: $c500;
+      }
+
+      &--mail {
+        margin-bottom: 20px;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $c100;
+
+
+          font-size: 14px;
+          line-height: 18px;
+
+          img {
+            margin-right: 5px;
+          }
+
+          strong {
+
+            font-weight: var(--font-r);
+          }
+        }
+
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: var(--font-r);
+      }
+
+
+    }
+
+    &__close {
+      border: none;
+      background: inherit;
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+    }
   }
 }
