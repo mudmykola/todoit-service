@@ -1,4 +1,4 @@
-let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".sliderabout-cards", {
   slidesPerView: 2,
   spaceBetween: 30,
   navigation: {

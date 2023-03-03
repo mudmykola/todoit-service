@@ -25,6 +25,13 @@
     width: 610px;
     background: $default;
     border-radius: 20px;
+    @extend %dtrans;
+    cursor: pointer;
+
+    &:hover {
+      @extend %border-ef;
+      @extend %htrans;
+    }
 
     &__box {
       padding: 40px;
