@@ -5,3 +5,4 @@ import tteamsTabs from "./components/tteams-tabs";
 import cases from "./components/cases.js";
 import slider from "./components/slider.js";
 import sliderteams from "./components/sliderteams.js";
+import teamsmodal from "./components/teamsmodal.js";
