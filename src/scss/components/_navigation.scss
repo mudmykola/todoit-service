@@ -22,10 +22,8 @@
           @extend %dtrans;
 
           &:hover {
-
             color: $c200;
             @extend %htrans;
-
           }
         }
       }
@@ -47,10 +45,10 @@
       cursor: pointer;
 
       p:after {
-        content: '';
+        content: "";
         position: absolute;
         display: inline-block;
-        background-image: url('/img/svg/arrow-drop.svg');
+        background-image: url("/img/svg/arrow-drop.svg");
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         background-size: contain;
@@ -65,9 +63,11 @@
 
     &__btn.active {
       color: $c200;
+      background: transparent;
+      font-weight: var(--font-r);
 
       p:after {
-        content: '';
+        content: "";
         position: absolute;
         display: inline-block;
         background-repeat: no-repeat;
@@ -89,13 +89,25 @@
       flex-direction: column;
       border-radius: 5px;
       background: $default;
-      width: 100px;
+
+      width: 150px;
       text-align: center;
       padding: 15px;
-      right: -30%;
+      top: 35px;
+      right: -45%;
       @extend %dtrans;
       @extend %border-ef;
+      &::after {
+        content: "";
+        position: absolute;
 
+        display: inline-block;
+        top: -8%;
+        right: 50%;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $default;
+      }
       a {
         font-size: 16px;
         line-height: 20px;
@@ -138,10 +150,11 @@
         cursor: pointer;
 
         p:after {
-          content: '';
+          content: "";
+
           position: absolute;
           display: inline-block;
-          background-image: url('/img/svg/arrow-drop.svg');
+          background-image: url("/img/svg/arrow-drop.svg");
           background-repeat: no-repeat;
           -webkit-background-size: contain;
           background-size: contain;
@@ -149,17 +162,16 @@
           width: 10px;
           height: 10px;
           top: 30%;
-          right: -30%;
+          right: -50%;
           @extend %dtrans;
         }
-
       }
 
       &--btn.show {
         color: $c200;
 
         p:after {
-          content: '';
+          content: "";
           position: absolute;
           display: inline-block;
           background-repeat: no-repeat;
@@ -169,7 +181,7 @@
           width: 10px;
           height: 10px;
           top: 30%;
-          right: -30%;
+          right: -50%;
           transform: rotate(180deg);
           @extend %htrans;
         }
@@ -181,13 +193,24 @@
         flex-direction: column;
         border-radius: 3px;
         background: $default;
-        width: 50px;
+        width: 100px;
         text-align: center;
         padding: 15px;
-        right: -50%;
+        top: 35px;
+        right: -40px;
         @extend %dtrans;
         @extend %border-ef;
+        &::after {
+          content: "";
+          position: absolute;
 
+          display: inline-block;
+          top: -10%;
+          right: 50%;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $default;
+        }
         a {
           color: $c100;
           @extend %dtrans;
@@ -200,7 +223,6 @@
 
         a + a {
           margin-top: 5px;
-
         }
       }
     }
@@ -220,7 +242,9 @@
 // 768
 @media (max-width: 768px) {
   .navigation {
-    &-menu, &-btn, &-lang {
+    &-menu,
+    &-btn,
+    &-lang {
       display: none;
     }
   }
@@ -229,7 +253,9 @@
 // 600
 @media (max-width: 600px) {
   .navigation {
-    &-menu, &-btn, &-lang {
+    &-menu,
+    &-btn,
+    &-lang {
       display: none;
     }
   }
@@ -238,7 +264,9 @@
 // 480
 @media (max-width: 480px) {
   .navigation {
-    &-menu, &-btn, &-lang {
+    &-menu,
+    &-btn,
+    &-lang {
       display: none;
     }
   }
@@ -247,9 +275,10 @@
 // 320
 @media (max-width: 320px) {
   .navigation {
-    &-menu, &-btn, &-lang {
+    &-menu,
+    &-btn,
+    &-lang {
       display: none;
     }
-
   }
 }
