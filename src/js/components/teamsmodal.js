@@ -1,43 +1,43 @@
-// Get all sliderteams-card__bmodal elements
+// Отримати всі елементи sliderteams-card__bmodal
 const bmodals = document.querySelectorAll(".sliderteams-card__bmodal");
-// Loop through each bmodal and add a click event listener
+// Пробігаємо по кожному bmodal і додаємо слухач події кліку
 bmodals.forEach((bmodal) => {
   bmodal.addEventListener("click", () => {
-    // Get the value of the data-modal attribute
+    // Отримуємо значення атрибута data-modal
     const modalNumber = bmodal.dataset.modal;
-    // Select the corresponding modal based on the data-bmodal attribute
+    // Вибераємо відповідний атрибут data-bmodal
     const modal = document.querySelector(
       `.sliderteams-modal[data-bmodal="${modalNumber}"]`
     );
-    // Open the modal by adding the "open" class
+    //  Додаємо class "open"
     modal.classList.add("open");
   });
 });
-// Get all sliderteams-modal__close elements
+// Отримуємо всі елементи sliderteams-modal__close
 const closeButtons = document.querySelectorAll(".sliderteams-modal__close");
-// Loop through each close button and add a click event listener
+// Пробігаємося по кожній кнопці закриття та додаємо слухач події кліку
 closeButtons.forEach((closeButton) => {
   closeButton.addEventListener("click", () => {
-    // Get the parent modal element
+    // Отримуємо батьківський модальний елемент
     const modal = closeButton.closest(".sliderteams-modal");
 
-    // Close the modal by removing the "open" class
+    //  Закриваємо modal видаливши class "open"
     modal.classList.remove("open");
   });
 });
-// Add a click event listener to the entire document
+// Додаємо слухача на ввесь документ
 document.addEventListener("click", (event) => {
   // Get the clicked element
   const { target } = event;
-  // Check if the clicked element is a modal content element or a close button
+  // Перевірка чи є натичнутий елемент
   if (
-    target.classList.contains("sliderteams-modal") ||
+    target.classList.contains("sliderteams-modal__cont") ||
     target.classList.contains("sliderteams-modal__close")
   ) {
-    // Get the parent modal element
+    // Отримуємо батьківський елемент
     const modal = target.closest(".sliderteams-modal");
 
-    // Close the modal by removing the "open" class
+    // Закрити modal видаливши class "open"
     modal.classList.remove("open");
   }
 });
