@@ -6,3 +6,4 @@ import cases from "./components/cases.js";
 import slider from "./components/slider.js";
 import sliderteams from "./components/sliderteams.js";
 import teamsmodal from "./components/teamsmodal.js";
+import modalorder from "./components/modalorder.js";

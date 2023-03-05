@@ -22,6 +22,7 @@ $c200: #0597f2;
 $c300: #e7f5ff;
 $c400: #dadada;
 $c500: #828282;
+$c600: #bdbdbd;
 $default: #fff;
 
 //effect
@@ -31,9 +32,9 @@ $default: #fff;
 
 %header-ef {
   background: linear-gradient(
-      180deg,
-      rgba(0, 80, 157, 0.08) 0%,
-      rgba(0, 80, 157, 0) 100%
+    180deg,
+    rgba(0, 80, 157, 0.08) 0%,
+    rgba(0, 80, 157, 0) 100%
   );
 }
 
@@ -64,5 +65,3 @@ $default: #fff;
   float: right;
   padding: 0 15px;
 }
-
-

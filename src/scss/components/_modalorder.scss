@@ -1,0 +1,139 @@
+.modalorder {
+  position: fixed;
+  display: none;
+
+  overflow: auto;
+  opacity: 0;
+  top: 0%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  z-index: 9999;
+
+  &-close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    img {
+      &:hover {
+        transform: rotate(360deg);
+        transition: transform 1s ease-in-out;
+      }
+    }
+  }
+  &-inner {
+    position: absolute;
+    position: fixed;
+    background: $default;
+    width: 400px;
+    top: 2%;
+    right: 39%;
+    border-radius: 20px;
+    @extend %border-ef;
+  }
+  &-box {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 40px 40px 40px;
+    h2 {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: var(--font-b);
+      text-align: center;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $c600;
+      padding-bottom: 16px;
+      margin-top: 40px;
+      outline: none;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: var(--font-r);
+        color: $c600;
+      }
+    }
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $c600;
+      margin-top: 40px;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: var(--font-r);
+        color: $c600;
+      }
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+    }
+    &__phone select {
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $c600;
+      padding-bottom: 15px;
+      margin-right: 15px;
+    }
+    &__dispatch {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      justify-content: space-between;
+      button {
+        color: $default;
+        border-radius: 6px;
+        background: #e0e0e0;
+        border: none;
+        padding: 22px 30px;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: var(--font-b);
+        cursor: pointer;
+        margin-right: 20px;
+        @extend %dtrans;
+        &:hover {
+          background: $c200;
+          @extend %htrans;
+        }
+      }
+      input {
+        border: none;
+      }
+    }
+    &__police {
+      margin-top: 30px;
+      width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: var(--font-r);
+      color: $c600;
+      a {
+        color: $c200;
+      }
+    }
+  }
+}
+
+.show-modal {
+  display: flex;
+  overflow: auto;
+  opacity: 1;
+  transition: all 0.3s ease;
+}

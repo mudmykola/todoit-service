@@ -1,0 +1,65 @@
+<div class="modalorder">
+  <div class="modalorder-inner">
+    <div class="modalorder-box">
+      <button class="modalorder-close">
+        <img src="/img/svg/close.svg" alt="close" />
+      </button>
+      <h2>Замовити демо</h2>
+      <form class="modalorder-form">
+        <label for="name">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ім’я *"
+            required
+          />
+        </label>
+        <label for="phone">
+          <div class="modalorder-form__phone">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+380 97 00 00 000"
+              pattern="[0-9]{8}"
+              required
+            />
+          </div>
+        </label>
+        <label for="company">
+          <input
+            type="text"
+            id="company"
+            placeholder="Назва компанії"
+            name="company"
+          />
+        </label>
+        <label for="email">
+          <input
+            type="email"
+            id="email"
+            placeholder="E-mail*"
+            name="email"
+            required
+          />
+        </label>
+        <label for="message">
+          <textarea
+            id="message"
+            placeholder="Опишіть задачу яку потрібно вирішити"
+            name="message"
+          ></textarea>
+        </label>
+        <div class="modalorder-form__dispatch">
+          <button type="submit" id="submit-btn">Надіслати</button>
+          <input type="file" id="file" name="file" />
+        </div>
+        <div class="modalorder-form__police">
+          Ознайомлений з <a href="#">Політикою конфіденційності</a> та даю згоду
+          на збір та обробку своїх персональних даних
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
