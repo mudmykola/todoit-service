@@ -258,6 +258,7 @@
 
     &__list {
       ul {
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
 
         li {
@@ -340,10 +341,10 @@
     &__services {
       &--crm {
         width: 210px;
-        bottom: -28%;
+        bottom: -33%;
         padding: 20px;
         border-radius: 15px;
-        top: 118%;
+        top: 120%;
 
         p {
           font-size: 12px;
@@ -353,7 +354,7 @@
 
       &--ai {
         width: 245px;
-        bottom: -37%;
+        bottom: -45%;
         padding: 20px;
         border-radius: 15px;
 
@@ -365,7 +366,7 @@
 
       &--microsoft {
         width: 290px;
-        bottom: -45%;
+        bottom: -55%;
         padding: 20px;
         border-radius: 15px;
 

@@ -235,6 +235,7 @@
 // 600
 @media (max-width: 600px) {
   .toolscont {
+    height: 800px;
     &-box {
       top: 60%;
       height: 1100px;
@@ -332,8 +333,9 @@
 // 480
 @media (max-width: 480px) {
   .toolscont {
+    height: 800px;
     &-box {
-      top: 16%;
+      top: 60%;
       height: 1140px;
     }
 
@@ -407,7 +409,7 @@
 @media (max-width: 320px) {
   .toolscont {
     &-box {
-      top: 16%;
+      top: 60%;
       height: 1140px;
     }
 

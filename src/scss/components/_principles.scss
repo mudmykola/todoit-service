@@ -56,7 +56,8 @@
 // 600
 @media (max-width: 600px) {
   .principles {
-    margin: 420px 0;
+    margin: 200px 0 0;
+    padding-top: 70%;
 
     &-inner {
       flex-direction: column;
@@ -81,7 +82,8 @@
 // 480
 @media (max-width: 480px) {
   .principles {
-    margin: 420px 0;
+    margin: 200px 0 0;
+    padding-top: 70%;
 
     &-inner {
       flex-direction: column;
@@ -106,7 +108,8 @@
 // 320
 @media (max-width: 320px) {
   .principles {
-    margin: 500px 0;
+    margin: 200px 0 0;
+    padding-top: 70%;
 
     &-inner {
       flex-direction: column;

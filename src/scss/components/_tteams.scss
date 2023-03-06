@@ -96,3 +96,249 @@
   display: flex;
   @extend %htrans;
 }
+
+// 768
+@media (max-width: 768px) {
+  .tteams {
+    &-box {
+      width: 100%;
+    }
+    &-content {
+      padding: 25px 40px;
+      &__title {
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+    &-tabs {
+      padding: 25px;
+    }
+    &-contents {
+      padding: 25px;
+      &__cont {
+        width: 100%;
+      }
+      &__img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// 600
+@media (max-width: 600px) {
+  .tteams {
+    margin-top: 60px;
+    &-title {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &-box {
+      width: 100%;
+    }
+    &-content {
+      flex-direction: column;
+      padding: 25px 20px;
+      &__title {
+        width: 100%;
+        flex-direction: column;
+        &--text {
+          margin: 0;
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__desc {
+        width: 100%;
+        p {
+          width: 100%;
+          margin: 0;
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+    &-tabs {
+      padding: 0;
+      grid-template-columns: repeat(1, 1fr);
+      button {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    &-contents {
+      width: 100%;
+      &__cont {
+        width: 100%;
+        flex-direction: column;
+      }
+      &__text {
+        width: 100%;
+        h2 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+  .box-container {
+    width: 100%;
+    float: none;
+  }
+}
+
+// 480
+@media (max-width: 480px) {
+  .tteams {
+    margin-top: 60px;
+    &-title {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &-box {
+      width: 100%;
+    }
+    &-content {
+      flex-direction: column;
+      padding: 25px 20px;
+      &__title {
+        width: 100%;
+        flex-direction: column;
+        &--text {
+          margin: 0;
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__desc {
+        width: 100%;
+        p {
+          width: 100%;
+          margin: 0;
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+    &-tabs {
+      padding: 0;
+      grid-template-columns: repeat(1, 1fr);
+      button {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    &-contents {
+      width: 100%;
+      &__cont {
+        width: 100%;
+        flex-direction: column;
+      }
+      &__text {
+        width: 100%;
+        h2 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+  .box-container {
+    width: 100%;
+    float: none;
+  }
+}
+
+// 320
+@media (max-width: 320px) {
+  .tteams {
+    margin-top: 60px;
+    &-title {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &-box {
+      width: 100%;
+    }
+    &-content {
+      flex-direction: column;
+      padding: 25px 20px;
+      &__title {
+        width: 100%;
+        flex-direction: column;
+        &--text {
+          margin: 0;
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__desc {
+        width: 100%;
+        p {
+          width: 100%;
+          margin: 0;
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+    &-tabs {
+      padding: 0;
+      grid-template-columns: repeat(1, 1fr);
+      button {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    &-contents {
+      width: 100%;
+      &__cont {
+        width: 100%;
+        flex-direction: column;
+      }
+      &__text {
+        width: 100%;
+        h2 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+  .box-container {
+    width: 300px;
+    float: none;
+  }
+}

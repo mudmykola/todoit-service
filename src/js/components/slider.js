@@ -12,4 +12,12 @@ let swiper = new Swiper(".sliderabout-cards", {
     el: ".sliderabout-pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+  },
 });
