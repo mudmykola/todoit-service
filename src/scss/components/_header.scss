@@ -20,7 +20,7 @@
 // 600
 @media (max-width: 600px) {
   .header {
-    height: 68vh;
+    height: 100vh;
     background-size: cover;
   }
 }
@@ -28,17 +28,15 @@
 // 480
 @media (max-width: 480px) {
   .header {
-    height: 20vh;
+    height: 100vh;
     background-size: cover;
   }
-
 }
 
 // 320
 @media (max-width: 320px) {
   .header {
-    height: 20vh;
+    height: 100vh;
     background-size: cover;
   }
-
 }

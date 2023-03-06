@@ -1,5 +1,5 @@
 let swiper = new Swiper(".sliderteams-cards", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
     nextEl: ".sliderteams-controls__next",
@@ -8,5 +8,16 @@ let swiper = new Swiper(".sliderteams-cards", {
   pagination: {
     el: ".sliderteams-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });

@@ -4,3 +4,8 @@ package-lock.json
 .vscode
 .idea
 README.md
+
+
+.firebase/hosting.YXBw.cache
+firebase.json
+.firebaserc

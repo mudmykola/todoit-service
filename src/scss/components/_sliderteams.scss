@@ -240,16 +240,164 @@
 
 // 768
 @media (max-width: 768px) {
+  .sliderteams {
+    &-modal {
+      &__close {
+        right: 7%;
+        top: 4%;
+      }
+      &__inner {
+        width: 100%;
+        left: 0;
+      }
+      &__controls {
+        display: flex;
+      }
+      &__box {
+        padding-left: 20px;
+      }
+      &__img {
+        margin-right: 30px;
+      }
+      &__cont {
+        &--mail {
+          a {
+            font-size: 10px;
+            line-height: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        span {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .sliderteams {
+    &-modal {
+      &__close {
+        right: 7%;
+        top: 4%;
+      }
+      &__inner {
+        width: 100%;
+        left: 0;
+      }
+      &__controls {
+        display: flex;
+      }
+      &__box {
+        padding-left: 20px;
+      }
+      &__img {
+        margin-right: 30px;
+      }
+      &__cont {
+        &--mail {
+          a {
+            font-size: 10px;
+            line-height: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        span {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .sliderteams {
+    &-modal {
+      &__close {
+        right: 7%;
+        top: 4%;
+      }
+      &__inner {
+        width: 100%;
+        left: 0;
+      }
+      &__controls {
+        display: flex;
+      }
+      &__box {
+        padding-left: 20px;
+      }
+      &__img {
+        margin-right: 30px;
+      }
+      &__cont {
+        &--mail {
+          a {
+            font-size: 10px;
+            line-height: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        span {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .sliderteams {
+    &-modal {
+      &__close {
+        right: 7%;
+        top: 4%;
+      }
+      &__inner {
+        width: 100%;
+        left: 0;
+      }
+      &__controls {
+        display: flex;
+      }
+      &__box {
+        padding-left: 20px;
+      }
+      &__img {
+        margin-right: 30px;
+      }
+      &__cont {
+        &--mail {
+          a {
+            font-size: 10px;
+            line-height: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        span {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
