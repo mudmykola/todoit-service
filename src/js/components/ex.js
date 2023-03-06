@@ -1,2 +1,3 @@
-let a = 25;
-console.log(a);
+document.getElementById("sendBtn").addEventListener("click", function () {
+  window.location.href = "#contact";
+});

@@ -23,50 +23,52 @@
       color: $c200;
       display: inline-block;
     }
+    h2 span {
+    }
   }
   span {
     width: 470px;
     margin: 0 auto;
     margin-bottom: 19px;
   }
-button{
-  border: none;
-  margin: 0 auto;
-  cursor: pointer;
-  width: 251px;
-  height: 60px;
-  background: $c100;
-  border-radius: 6px;
-  font-weight: var(--font-b);
-  color: $default;
-  @extend %dtrans;
-  &:hover{
-    background: $c200;
-    @extend %htrans;
+  button {
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 251px;
+    height: 60px;
+    background: $c100;
+    border-radius: 6px;
+    font-weight: var(--font-b);
+    color: $default;
+    @extend %dtrans;
+    &:hover {
+      background: $c200;
+      @extend %htrans;
+    }
   }
-}
 }
 
 // 768
 @media (max-width: 768px) {
-  .header-content{
+  .header-content {
     padding-top: 50px;
-    strong{
+    strong {
       font-size: 15px;
       line-height: 20px;
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       width: 100%;
       font-size: 30px;
       line-height: 35px;
     }
-    span{
+    span {
       width: 100%;
       font-size: 12px;
       line-height: 20px;
     }
-    button{
+    button {
       width: 200px;
       height: 50px;
       font-size: 14px;
@@ -77,24 +79,24 @@ button{
 
 // 600
 @media (max-width: 600px) {
-  .header-content{
+  .header-content {
     padding-top: 50px;
-    strong{
+    strong {
       font-size: 15px;
       line-height: 20px;
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       width: 100%;
       font-size: 30px;
       line-height: 35px;
     }
-    span{
+    span {
       width: 100%;
       font-size: 12px;
       line-height: 20px;
     }
-    button{
+    button {
       width: 200px;
       height: 50px;
       font-size: 14px;
@@ -105,24 +107,24 @@ button{
 
 // 480
 @media (max-width: 480px) {
-  .header-content{
+  .header-content {
     padding-top: 50px;
-    strong{
+    strong {
       font-size: 15px;
       line-height: 20px;
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       width: 100%;
       font-size: 30px;
       line-height: 35px;
     }
-    span{
+    span {
       width: 100%;
       font-size: 12px;
       line-height: 20px;
     }
-    button{
+    button {
       width: 200px;
       height: 50px;
       font-size: 14px;
@@ -133,24 +135,24 @@ button{
 
 // 320
 @media (max-width: 320px) {
-  .header-content{
+  .header-content {
     padding-top: 50px;
-    strong{
+    strong {
       font-size: 15px;
       line-height: 20px;
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       width: 100%;
       font-size: 30px;
       line-height: 35px;
     }
-    span{
+    span {
       width: 100%;
       font-size: 12px;
       line-height: 20px;
     }
-    button{
+    button {
       width: 200px;
       height: 50px;
       font-size: 14px;

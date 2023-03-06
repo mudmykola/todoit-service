@@ -19,5 +19,8 @@ let swiper = new Swiper(".sliderabout-cards", {
     480: {
       slidesPerView: 1,
     },
+    1024: {
+      slidesPerView: 2,
+    },
   },
 });
